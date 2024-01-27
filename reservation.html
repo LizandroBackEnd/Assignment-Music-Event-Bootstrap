@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Reservation Music Event</title>
+</head>
+<body class="bg-black text-white">  
+     
+  <nav class="navbar bg-black navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand p-0" href="./index.html">
+        <img src="./img/logo.png" alt="LOGO HTML&CSS" height="54"> <span class="align-middle">MUSIC FESTIVAL EVENT</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link border-end active" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./reservation.html"><i class="bi bi-bag-check"></i> Reservation</a>
+          </li>
+    </div>
+  </nav>   
+   
+  <main class="container botton"> 
+    <div class="row"> 
+      <div class="col bg-black text-white mb-3">
+        <p class="fs-3">Reservation</p>
+        <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback">
+                    Your username is required.
+                  </div>
+                </div>
+              </div> 
+              <div class="col-12">
+                <label for="username" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
+                <div class="invalid-feedback">
+                    Your email address is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="150 East 58th St., 30th Floor, New York, N.Y." required="">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div> 
+              <div class="col-md-6">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option> 
+                  <option>Mexico</option>
+                  <option>España</option>
+                  <option>Italia</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid Country.
+                </div>
+              </div> 
+              
+              <div class="col-md-6">
+                <label for="country" class="form-label">Music band</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>Foo Fighters</option> 
+                  <option>Nirvana</option>
+                  <option>Vacations</option>
+                  <option>Temach</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid Music band.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="state" class="form-label">Quantity of reservations</label>
+                <select class="form-select" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>One</option>
+                  <option>Two</option> 
+                  <option>Three</option>
+                  <option>Four</option>
+                  <option>Five</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid Quantity of reservations.
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"> 
+            <div class="form-check"> 
+              <h4 class="mb-3">Payment</h4>
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Credit card
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Debit card
+              </label>
+            </div> 
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Paypal
+              </label>
+            </div> 
+             
+            <div class="col-12">
+              <label for="Nameoncard" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="Nameoncard" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid first name on card is required.
+              </div>
+            </div> 
+             
+            <div class="col-12">
+              <label for="Creditcardnumber" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="Creditcardnumber" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid  Credit card number is required.
+              </div>
+            </div> 
+             
+            <div class="col-12">
+              <label for="Expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="Expiration" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid  the Expiration is required.
+              </div>
+            </div> 
+             
+            <div class="col-12">
+              <label for="CVV" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="CVV" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid  CVV is required.
+              </div>
+            </div>
+            
+
+            <button class="w-100 btn btn-success btn-lg mb-3 mt-3" type="submit">Make a reservation</button>
+          </form> 
+      </div>
+        <div class="col">
+          <div class="card text-bg-dark">
+              <img src="./img/all.jpg" class="card-img-top" alt="tu opinion">
+              <div class="card-body">
+                <h5 class="card-title title ">Come and enjoy this great festival with its outstanding musical groups</h5>
+          </div>
+      </div> 
+    </div>
+  </main> 
+   
+  <footer class="navbar fixed-bottom bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#"><small class="p-0 text-body-secondary">© Copyright MUSIC FESTIVAL EVENT</small></a>
+    </div>
+  </footer>
+     
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script> 
+</body>
+</html> 
